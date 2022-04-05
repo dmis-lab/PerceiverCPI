@@ -36,7 +36,7 @@ significant improvements over previous approaches in all experiments
 Set up the environment:
 
 ```bash
-git clone https://github.com/NathanielNguyen11/PerceiverCPI.git
+git clone https://github.com/dmis-lab/PerceiverCPI.git
 conda env create -f environment.yml
 ```
 
