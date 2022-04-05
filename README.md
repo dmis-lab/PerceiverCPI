@@ -23,6 +23,7 @@ lack of expressivity. However, these approaches commonly use simple concatenatio
 these limitations, we propose the PerceiverCPI network, which adopts the cross-attention mechanism to
 improve the learning ability of the representation of drug and target interactions and takes advantage of
 the rich information obtained from extended-connectivity fingerprints (ECFP) to improve the performance.
+
 Results: We perform PerceiverCPI on three main datasets, Davis, KIBA, and Metz, to compare our
 proposed model with state-of-the-art methods. The proposed method offers satisfactory performance and
 significant improvements over previous approaches in all experiments
