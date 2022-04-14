@@ -43,8 +43,12 @@ conda env create -f environment.yml
 ```
 
 # 1.**Dataset**
+![image](https://user-images.githubusercontent.com/32150689/163341837-8d137dad-f9be-47d1-bf76-80c9c654d424.png)
 
-The data should be in the format csv: 'smiles','sequence','label'
+![image](https://user-images.githubusercontent.com/32150689/163341766-3115ffa6-0cfe-437e-be75-670de1b4da43.png)
+
+The data should be in the format csv: 'smiles','sequence','label'!
+
 
 # 2.**To train the model:**
 ```bash
