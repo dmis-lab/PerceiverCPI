@@ -49,6 +49,7 @@ conda env create -f environment.yml
 
 The data should be in the format csv: 'smiles','sequence','label'!
 
+The dataset can be found: [HERE](https://drive.google.com/drive/folders/1I7LWz4MwlR62dk__GNvIoyxN5sAUrzrf?usp=sharing)
 
 # 2.**To train the model:**
 ```bash
