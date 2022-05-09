@@ -51,6 +51,8 @@ The data should be in the format csv: 'smiles','sequence','label'!
 
 The dataset can be found: [HERE](https://drive.google.com/drive/folders/1I7LWz4MwlR62dk__GNvIoyxN5sAUrzrf?usp=sharing)
 
+The pretrained model can be found: [HERE](https://drive.google.com/drive/folders/16Qte7qn9Erq4jUCBcOC7WhaX7xImC2SZ?usp=sharing)
+
 # 2.**To train the model:**
 ```bash
 python train.py --data_path "datasetpath" --separate_val_path "validationpath" --separate_test_path "testpath" --metric mse --dataset_type regression --save_dir "checkpointpath" --target_columns label
