@@ -43,7 +43,7 @@ conda env create -f environment.yml
 ```
 
 # 1.**Dataset**
-![image](https://user-images.githubusercontent.com/32150689/163341837-8d137dad-f9be-47d1-bf76-80c9c654d424.png)
+![image]((https://user-images.githubusercontent.com/32150689/167997948-78e4b043-f619-45ff-ae00-34a42edcd3f0.png))
 
 ![image](https://user-images.githubusercontent.com/32150689/163341766-3115ffa6-0cfe-437e-be75-670de1b4da43.png)
 
