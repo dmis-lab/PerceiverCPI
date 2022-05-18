@@ -1,7 +1,7 @@
 # PerceiverCPI
 A Pytorch Implementation of paper:
 
-**PerceiverCPI: An iterative cross-attention network for compound-protein interaction prediction**
+**PerceiverCPI: A cascaded cross-attention network for compound-protein interaction prediction**
 
 Ngoc-Quang Nguyen , Gwanghoon Jang , Hajung Kim and Jaewoo Kang
 
@@ -23,7 +23,6 @@ lack of expressivity. However, these approaches commonly use simple concatenatio
 these limitations, we propose the PerceiverCPI network, which adopts the cross-attention mechanism to
 improve the learning ability of the representation of drug and target interactions and takes advantage of
 the rich information obtained from extended-connectivity fingerprints (ECFP) to improve the performance.
-
 Results: We perform PerceiverCPI on three main datasets, Davis, KIBA, and Metz, to compare our
 proposed model with state-of-the-art methods. The proposed method offers satisfactory performance and
 significant improvements over previous approaches in all experiments
@@ -37,21 +36,13 @@ significant improvements over previous approaches in all experiments
 Set up the environment:
 
 ```bash
-git clone https://github.com/dmis-lab/PerceiverCPI.git
+git clone https://github.com/NathanielNguyen11/PerceiverCPI.git
 conda env create -f environment.yml
 ```
 
 # 1.**Dataset**
-![benchmark_data_vis](https://user-images.githubusercontent.com/32150689/167998111-f73c2fee-3ea4-49d4-8f60-8338e0acca00.PNG)
 
-
-![image](https://user-images.githubusercontent.com/32150689/163341766-3115ffa6-0cfe-437e-be75-670de1b4da43.png)
-
-The data should be in the format csv: 'smiles','sequence','label'!
-
-The dataset can be found: [HERE](https://drive.google.com/drive/folders/1I7LWz4MwlR62dk__GNvIoyxN5sAUrzrf?usp=sharing)
-
-The pretrained model can be found: [HERE](https://drive.google.com/drive/folders/16Qte7qn9Erq4jUCBcOC7WhaX7xImC2SZ?usp=sharing)
+The data should be in the format csv: 'smiles','sequence','label'
 
 # 2.**To train the model:**
 ```bash
