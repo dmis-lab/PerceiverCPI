@@ -1,7 +1,7 @@
 # PerceiverCPI (Version 1.0)
 A Pytorch Implementation of paper:
 
-**PerceiverCPI: An cascaded cross-attention network for compound-protein interaction prediction**
+**PerceiverCPI: A cascaded cross-attention network for compound-protein interaction prediction**
 
 Ngoc-Quang Nguyen , Gwanghoon Jang , Hajung Kim and Jaewoo Kang
 
