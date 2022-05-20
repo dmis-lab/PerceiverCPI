@@ -5,7 +5,8 @@ A Pytorch Implementation of paper:
 
 Ngoc-Quang Nguyen , Gwanghoon Jang , Hajung Kim and Jaewoo Kang
 
-Our reposistory uses https://github.com/chemprop/chemprop as a backbone for compound information extracting
+Our reposistory uses https://github.com/chemprop/chemprop as a backbone for compound information extracting.
+We higly recommend researchers to read the paper [DMPNN](https://pubs.acs.org/doi/abs/10.1021/acs.jcim.9b00237) for better understand how it was used to extract the compound information. 
 
 Motivation: Drug discovery using traditional methods is labor-intensive and time-consuming; hence,
 efforts are being made to repurpose existing drugs. To find new methods for drug repurposing, many
