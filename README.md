@@ -6,33 +6,27 @@ A Pytorch Implementation of paper:
 Ngoc-Quang Nguyen , Gwanghoon Jang , Hajung Kim and Jaewoo Kang
 
 Our reposistory uses https://github.com/chemprop/chemprop as a backbone for compound information extracting.
-We higly recommend researchers to read the paper [DMPNN](https://pubs.acs.org/doi/abs/10.1021/acs.jcim.9b00237) for better understand how it was used to extract the compound information. 
+We highly recommend researchers to read the paper [D-MPNN](https://pubs.acs.org/doi/abs/10.1021/acs.jcim.9b00237) for better understand how it was used to extract the compound information. 
 
-Motivation: Drug discovery using traditional methods is labor-intensive and time-consuming; hence,
-efforts are being made to repurpose existing drugs. To find new methods for drug repurposing, many
-artificial intelligence-based approaches have been proposed to predict compound-protein interactions
-(CPIs). However, owing to the high-dimensional nature of datasets extracted from drugs and targets,
-computational models for understanding CPIs play an important role in facilitating drug repurposing in
-modern life. Recently, two types of models have achieved promising results for exploiting molecular
-information: graph convolutional neural networks that construct a learned molecular representation from
-the graph structure (atoms and edges) of the molecule and neural networks that can be applied to computed
-molecular descriptors or fingerprints. However, the superiority of one method over the other is yet to
-be determined. Numerous recent studies have attempted to minimize the limitations of the restricted
-capacity of graph neural networks in small datasets, which include meaningless initial embeddings and
-lack of expressivity. However, these approaches commonly use simple concatenation of separate networks
-(compound net and protein net); therefore, there is no interaction between such information. To mitigate
-these limitations, we propose the PerceiverCPI network, which adopts the cross-attention mechanism to
-improve the learning ability of the representation of drug and target interactions and takes advantage of
-the rich information obtained from extended-connectivity fingerprints (ECFP) to improve the performance.
-
-Results: We perform PerceiverCPI on three main datasets, Davis, KIBA, and Metz, to compare our
-proposed model with state-of-the-art methods. The proposed method offers satisfactory performance and
-significant improvements over previous approaches in all experiments
-
-![model_architecture](https://user-images.githubusercontent.com/32150689/160957444-42323b80-c516-45d3-a67c-c896b150c252.PNG)
+Motivation: Compound-protein interaction (CPI) plays an essential role in drug discovery and is
+performed via expensive molecular docking simulations. Many artificial intelligence-based approaches
+have been proposed in this regard. Recently, two types of models have accomplished promising results in
+exploiting molecular information: graph convolutional neural networks that construct a learned molecular
+representation from a graph structure (atoms and bonds), and neural networks that can be applied to
+compute on descriptors or fingerprints of molecules. However, the superiority of one method over the other
+is yet to be determined. Recent studies have endeavored to aggregate information that is extracted from
+compounds and proteins to form the CPI task. Nonetheless, these approaches use simple concatenation
+to combine them, which cannot fully capture the interaction between such information.
 
 
+Results: We propose the Perceiver CPI network, which adopts a cross-attention mechanism to improve
+the learning ability of the representation of drug and target interactions and exploits the rich information
+obtained from extended-connectivity fingerprints to improve the performance. We evaluated Perceiver CPI
+on three main datasets, Davis, KIBA, and Metz, to compare the performance of our proposed model with
+that of state-of-the-art methods. The proposed method achieved satisfactory performance and exhibited
+significant improvements over previous approaches in all experiments.
 
+![image](https://user-images.githubusercontent.com/32150689/169429361-cee1031f-fef3-43a6-9220-943fa21de233.png)
 
 
 Set up the environment:
