@@ -13,18 +13,17 @@ performed via expensive molecular docking simulations. Many artificial intellige
 have been proposed in this regard. Recently, two types of models have accomplished promising results in
 exploiting molecular information: graph convolutional neural networks that construct a learned molecular
 representation from a graph structure (atoms and bonds), and neural networks that can be applied to
-compute on descriptors or fingerprints of molecules. However, the superiority of one method over the other
-is yet to be determined. Recent studies have endeavored to aggregate information that is extracted from
-compounds and proteins to form the CPI task. Nonetheless, these approaches use simple concatenation
-to combine them, which cannot fully capture the interaction between such information.
-
+compute on descriptors or fingerprints of molecules. However, the superiority of one method over the
+other is yet to be determined. Modern studies have endeavored to aggregate information that is extracted
+from compounds and proteins to form the CPI task. Nonetheless, these approaches have used a simple
+concatenation to combine them, which cannot fully capture the interaction between such information.
 
 Results: We propose the Perceiver CPI network, which adopts a cross-attention mechanism to improve
 the learning ability of the representation of drug and target interactions and exploits the rich information
 obtained from extended-connectivity fingerprints to improve the performance. We evaluated Perceiver CPI
 on three main datasets, Davis, KIBA, and Metz, to compare the performance of our proposed model with
 that of state-of-the-art methods. The proposed method achieved satisfactory performance and exhibited
-significant improvements over previous approaches in all experiments.
+significant improvements over previous approaches in all experiments
 
 ![image](https://user-images.githubusercontent.com/32150689/169429361-cee1031f-fef3-43a6-9220-943fa21de233.png)
 
