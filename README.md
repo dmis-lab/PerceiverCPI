@@ -66,5 +66,6 @@ python predict.py --test_path /hdd1/quang_backups/dti/mpnn_2021/data/deeppurpose
 # 4.**To train YOUR model:**
 
 Your data should be in the format csv, and the column names are: 'smiles','sequences','label'.
-You can freely tune the hyperparameter for your best pererformance but highly recommend using the Bayesian optimization package.
+
+You can freely tune the hyperparameter for your best pererformance (but highly recommend using the Bayesian optimization package).
 
