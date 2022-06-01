@@ -41,7 +41,7 @@ conda env create -f environment.yml
 
 ![image](https://user-images.githubusercontent.com/32150689/163341766-3115ffa6-0cfe-437e-be75-670de1b4da43.png)
 
-The data should be in the format csv: 'smiles','sequence','label'!
+The data should be in the format csv: 'smiles','sequences','label'!
 
 The dataset can be found: [HERE](https://drive.google.com/drive/folders/1I7LWz4MwlR62dk__GNvIoyxN5sAUrzrf?usp=sharing)
 
@@ -62,3 +62,9 @@ python predict.py --test_path "testdatapath" --checkpoint_dir "checkpointpath" -
 _For example:_
 
 python predict.py --test_path /hdd1/quang_backups/dti/mpnn_2021/data/deeppurpose/5_folds_check/davis/newnew/fold0/0davis_test_newprot.csv --checkpoint_dir regression_150_newprot_pre --preds_path newnew_fold0.csv
+
+# 4.**To train YOUR model:**
+
+Your data should be in the format csv, and the column names are: 'smiles','sequences','label'.
+You can freely tune the hyperparameter for your best pererformance but highly recommend using the Bayesian optimization package.
+
