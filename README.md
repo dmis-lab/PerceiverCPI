@@ -32,6 +32,8 @@ significant improvements over previous approaches in all experiments
 
 Set up the environment:
 
+In our experiment we use, Python 3.9 with PyTorch 1.7.1 + CUDA 10.1.
+
 ```bash
 git clone https://github.com/dmis-lab/PerceiverCPI.git
 conda env create -f environment.yml
