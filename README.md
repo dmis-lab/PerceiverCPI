@@ -39,7 +39,7 @@ git clone https://github.com/dmis-lab/PerceiverCPI.git
 conda env create -f environment.yml
 ```
 
-# 1.**Dataset**
+# 1.**Dataset and supplementary experiments**
 ![benchmark_data_vis](https://user-images.githubusercontent.com/32150689/167998111-f73c2fee-3ea4-49d4-8f60-8338e0acca00.PNG)
 
 
@@ -48,6 +48,7 @@ conda env create -f environment.yml
 The data should be in the format csv: 'smiles','sequences','label'!
 
 The dataset can be found: [HERE](https://drive.google.com/drive/folders/1I7LWz4MwlR62dk__GNvIoyxN5sAUrzrf?usp=sharing)
+The supplementary can be found: [HERE](https://drive.google.com/file/d/1yrnxVzqEjC15UcPUXpPMHIjpBdKwKBEM/view?usp=sharing)
 
 
 # 2.**To train the model:**
