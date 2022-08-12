@@ -54,7 +54,7 @@ def cross_validate(args: TrainArgs,
 
     # Save args
     makedirs(args.save_dir)
-    args.save(os.path.join(args.save_dir, 'args.json'))
+    args.save(os.path.join(args.save_dir, 'args.json'), with_reproducibility=False)
 
     #set explicit H option and reaction option
     set_explicit_h(args.explicit_h)
