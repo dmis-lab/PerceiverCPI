@@ -1,4 +1,4 @@
-# PerceiverCPI (Version 1.0)
+# Perceiver CPI (Version 1.0)
 A Pytorch Implementation of paper:
 
 **PerceiverCPI: A nested cross-attention network for compound-protein interaction prediction**
