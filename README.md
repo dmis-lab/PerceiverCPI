@@ -49,7 +49,7 @@ The data should be in the format csv: 'smiles','sequences','label'!
 
 The dataset can be found: [HERE](https://drive.google.com/drive/folders/1I7LWz4MwlR62dk__GNvIoyxN5sAUrzrf?usp=sharing)
 
-The supplementary can be found: [HERE](https://drive.google.com/file/d/1u_KbEpvU0iRCYUreZrXX6bcI1o3GhtQ3/view?usp=sharing)
+The supplementary can be found: [HERE](https://drive.google.com/file/d/1t4-fR0AltH1iHeullw1-NhTysMd5WLcV/view?usp=sharing)
 
 
 # 2.**To train the model:**
