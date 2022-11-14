@@ -5,8 +5,8 @@ A Pytorch Implementation of paper:
 
 Ngoc-Quang Nguyen , Gwanghoon Jang , Hajung Kim and Jaewoo Kang
 
-Our reposistory uses https://github.com/chemprop/chemprop as a backbone for compound information extracting.
-We highly recommend researchers read the paper [D-MPNN](https://pubs.acs.org/doi/abs/10.1021/acs.jcim.9b00237) to better understand how it was used to extract the compound information. 
+Our reposistory uses https://github.com/chemprop/chemprop as a backbone for compound information extraction.
+We highly recommend researchers read the paper [D-MPNN](https://pubs.acs.org/doi/abs/10.1021/acs.jcim.9b00237) to better understand how it was used. 
 
 Motivation: Compound-protein interaction (CPI) plays an essential role in drug discovery and is
 performed via expensive molecular docking simulations. Many artificial intelligence-based approaches
