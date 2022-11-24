@@ -72,7 +72,7 @@ Your data should be in the format csv, and the column names are: 'smiles','seque
 
 You can freely tune the hyperparameter for your best performance (but highly recommend using the Bayesian optimization package).
 
-# 4.Citations
+# 5.**Citations**
 If you find the models useful in your research, we ask that you cite the relevant paper:
 
 ~~~
