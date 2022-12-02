@@ -62,7 +62,6 @@ def run_training(args: TrainArgs,
                             bond_features_path=args.separate_val_bond_features_path,
                             smiles_columns = args.smiles_columns,
                             logger=logger)
-    # print('dataaaaaaaaaaaaaaaaaaaaaaaaaaaaa',data)
     if args.separate_val_path and args.separate_test_path:
         train_data = data
     elif args.separate_val_path:
@@ -148,9 +147,7 @@ def run_training(args: TrainArgs,
 
     # Set up test set evaluation
     test_smiles, test_sequences, test_targets = test_data.smiles(),test_data.sequences(), test_data.targets()
-    # print(test_smiles)
-    # print(test_sequences)
-    # input()
+
     if args.dataset_type == 'multiclass':
         sum_test_preds = np.zeros((len(test_smiles), args.num_tasks, args.multiclass_num_classes))
     else:
@@ -165,7 +162,6 @@ def run_training(args: TrainArgs,
         num_workers = args.num_workers
 
     # Create data loaders
-    # print('datateain',train_data)
     
     train_data_loader = MoleculeDataLoader(
         dataset=train_data,
@@ -330,7 +326,6 @@ def run_training(args: TrainArgs,
         dataset_type=args.dataset_type,
         logger=logger
     )
-    # print(args.num_tasks)
     prediction = []
     label = []
     for i in range(args.num_tasks):
