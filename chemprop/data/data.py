@@ -228,10 +228,10 @@ class MoleculeDatapoint:
         """
         if len(self._data) == 0 or self._data[0].features is None:
             return None
-        # print(d.features)
+
         a = []
         for d in self._data:
-            print(d.features)
+
             features_vec = AllChem.GetMorganFingerprintAsBitVect(mol, radius, nBits=num_bits)
             features = np.zeros((1,))
             DataStructs.ConvertToNumpyArray(features_vec, features)
@@ -256,7 +256,7 @@ class MoleculeDataset(Dataset):
         self._scaler = None
         self._batch_graph = None
         self._random = Random()
-        # print('daaaaaaaaaaaaaaaaaaaaaaaaaaaaa',data)
+
 
     def smiles(self, flatten: bool = False) -> Union[List[str], List[List[str]]]:
         """
@@ -267,8 +267,6 @@ class MoleculeDataset(Dataset):
         """
         if flatten:
             return [print(smiles) for d in self._data for smiles in d.smiles]
-        # for d in self._data:
-            # print(d.smiles)
 
         return [d.smiles for d in self._data]
 
@@ -301,22 +299,15 @@ class MoleculeDataset(Dataset):
 
         :return: A list of 1D numpy arrays containing the features for each molecule or None if there are no features.
         """
-        # if len(self._data) == 0 or self._data[0].features is None:
-        #     return None
-        # print(d.features)
-        a = []
+        list_fingvecs = []
         for d in self._data:
-            # print(d.features)
-            # print(d.mol)
             from rdkit import Chem, DataStructs
             features_vec = AllChem.GetMorganFingerprintAsBitVect(d.mol[0], radius = 2, nBits=2048)
             features = np.zeros((1,))
-            # print(features)
             DataStructs.ConvertToNumpyArray(features_vec, features)
-            # print(features)
-            a.append(features)
+            list_fingvecs.append(features)
 
-        return a
+        return list_fingvecs
     @property
     def number_of_molecules(self) -> int:
         """
@@ -540,7 +531,6 @@ class MoleculeDataset(Dataset):
         scaler = StandardScaler().fit(targets)
         scaled_targets = scaler.transform(targets).tolist()
         self.set_targets(scaled_targets)
-        # print('111111111111111111111111111111111111111111111111')
 
         return scaler
 
