@@ -56,7 +56,7 @@ python train.py --data_path "datasetpath" --separate_val_path "validationpath" -
 ```
 _Usage Example:_
 ~~~
-python train.py --data_path /hdd1/quang_backups/dti/mpnn_2021/data_fold0/davis_newprot_0/0davis_1_train_newprot.csv --separate_val_path /hdd1/quang_backups/dti/mpnn_2021/data_fold0/davis_newprot_0/0davis_val_newprot.csv --separate_test_path /hdd1/quang_backups/dti/mpnn_2021/data_fold0/davis_newprot_0/0davis_test_newprot.csv --metric mse --dataset_type regression --save_dir regression_150_newprot_pre --target_columns label --epochs 150 --ensemble_size 3 --num_folds 1 --batch_size 50 --aggregation mean --dropout 0.1 --save_preds
+python train.py --data_path ./toy_dataset/novel_pair_0_train.csv --separate_val_path ./toy_dataset/novel_pair_0_val.csv --separate_test_path ./toy_dataset/novel_pair_0_test.csv --metric mse --dataset_type regression --save_dir regression_150_newprot_pre --target_columns label --epochs 150 --ensemble_size 3 --num_folds 1 --batch_size 50 --aggregation mean --dropout 0.1 --save_preds
 ~~~
 # 3.**To take the inferrence:**
 ```bash
@@ -64,7 +64,7 @@ python predict.py --test_path "testdatapath" --checkpoint_dir "checkpointpath" -
 ```
 _Usage Example:_
 ~~~
-python predict.py --test_path /hdd1/quang_backups/dti/mpnn_2021/data/deeppurpose/5_folds_check/davis/newnew/fold0/0davis_test_newprot.csv --checkpoint_dir regression_150_newprot_pre --preds_path newnew_fold0.csv
+python predict.py --test_path ./toy_dataset/novel_pair_0_test.csv --checkpoint_dir regression_150_newprot_pre --preds_path newnew_fold0.csv
 ~~~
 # 4.**To train YOUR model:**
 
