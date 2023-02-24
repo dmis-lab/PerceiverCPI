@@ -178,8 +178,7 @@ class InteractionModel(nn.Module):
         
         vector_present_clone = vector_present.clone()
 
-        vector_present_clone = vector_present_clone - vector_present_clone.min(1,keepdim = True)[0]
-        vector_present_clone = vector_present_clone / vector_present_clone.max(1,keepdim = True)[0]
+        vector_present_clone = (vector_present_clone - vector_present_clone.min(1,keepdim = True)[0])/(vector_present_clone.max(1,keepdim = True)[0] - vector_present_clone.min(1,keepdim = True)[0])
         vector_present_clone *= threshold
         return vector_present_clone
 
