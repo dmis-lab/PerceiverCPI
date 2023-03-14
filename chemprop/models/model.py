@@ -174,7 +174,7 @@ class InteractionModel(nn.Module):
         return self.encoder(batch, features_batch, atom_descriptors_batch)
 
 
-        def normalization(self,vector_present,threshold=0.1):
+    def normalization(self,vector_present,threshold=0.1):
         
         vector_present_clone = vector_present.clone()
         num = vector_present_clone - vector_present_clone.min(1,keepdim = True)[0]
