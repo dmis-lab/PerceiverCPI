@@ -174,13 +174,13 @@ class InteractionModel(nn.Module):
         return self.encoder(batch, features_batch, atom_descriptors_batch)
 
 
-    def normalization(self,vector_present,threshold=1):
+        def normalization(self,vector_present,threshold=0.1):
         
         vector_present_clone = vector_present.clone()
+        num = vector_present_clone - vector_present_clone.min(1,keepdim = True)[0]
+        de = vector_present_clone.max(1,keepdim = True)[0] - vector_present_clone.min(1,keepdim = True)[0]
 
-        vector_present_clone = (vector_present_clone - vector_present_clone.min(1,keepdim = True)[0])/(vector_present_clone.max(1,keepdim = True)[0] - vector_present_clone.min(1,keepdim = True)[0])
-        vector_present_clone *= threshold
-        return vector_present_clone
+        return num / de
 
     def forward(self,
                 batch: Union[List[List[str]], List[List[Chem.Mol]], List[List[Tuple[Chem.Mol, Chem.Mol]]], List[BatchMolGraph]],
