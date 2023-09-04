@@ -36,8 +36,8 @@ class AttentionBlock(nn.Module):
         :Query : A projection function
         :Key : A projection function
         :Value : A projection function
-        Cross-Att: Query and Value should always come from the same source (Aiming to forcus on), Key comes from the other source
-        Self-Att : Both three Query, Key, Value come form the same source (For refining purpose)
+        Cross-Att: Key and Value should always come from the same source (Aiming to forcus on), Query comes from the other source
+        Self-Att : Both three Query, Key, Value come from the same source (For refining purpose)
         """
 
         batch_size = query.shape[0]
