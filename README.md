@@ -48,9 +48,6 @@ conda env create -f environment.yml
 
 The data should be in the format csv: 'smiles','sequences','label'!
 
-The supplementary can be found: [HERE](https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/39/1/10.1093_bioinformatics_btac731/2/btac731_supplementary_data.pdf?Expires=1683822877&Signature=h88F85eD2c911vsPpIRAlYyI-mrwjkgQoTGSPiY6KGCx5O6yrNZbU2UgDzuhBeYVx5RvLb-b1363ZDrebNYzh6pAnZ0Mq-h1li0aiXIVMJzeBD0~xLz9kzaR0DA09s2A7omblzmR690oeaMMvUjRiOOvbFYMmqmodcYZWxj7gGsIbwmamjQq~HERqDWEE5pBUeenht05ItvyKXZ~D2H1CLs2vbRaDAHMQl~vK9NljEan~pFPGJkofTdDPVOn34yszUlF7l231Omzge0T7CIiCC4dijeg1FfMrj-grJ2pqz1YC7Tcl1z22UvMd1pTcSXN1RveLZKMX~dI7GEJSeL2zg__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA)
-
-
 # 2.**To train the model:**
 ```bash
 python train.py --data_path "datasetpath" --separate_val_path "validationpath" --separate_test_path "testpath" --metric mse --dataset_type regression --save_dir "checkpointpath" --target_columns label
